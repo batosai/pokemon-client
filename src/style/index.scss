@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import "~bulma/sass/utilities/initial-variables";
+
+$primary: #d32f2f !default;
+
+.pointor {
+  cursor: pointer;
+}
+
+.mt-15 {
+  margin-top: 1.5em;
+}
+
+.tags {
+  .is-steel { background-color: #e0e0e0; }
+  .is-combat { background-color: #795548;color: #ffffff; }
+  .is-dragon { background-color: #f9a825; }
+  .is-water { background-color: #03a9f4; }
+  .is-fire { background-color: #f44336;color: #ffffff; }
+  .is-fairy { background-color: #f06292;color: #ffffff; }
+  .is-ice { background-color: #bbdefb; }
+  .is-insect { background-color: #cddc39; }
+  .is-normal { background-color: #eeeeee; }
+  .is-obscure { background-color: #424242;color: #ffffff; }
+  .is-plante { background-color: #8bc34a; }
+  .is-poison { background-color: #b39ddb; }
+  .is-psy { background-color: #9575cd;color: #ffffff; }
+  .is-rock { background-color: #3e2723;color: #ffffff; }
+  .is-ground { background-color: #8d6e63;color: #ffffff; }
+  .is-ghost { background-color: #4527a0;color: #ffffff; }
+  .is-darkness { background-color: #212121;color: #ffffff; }
+  .is-flight { background-color: #b3e5fc; }
+  .is-electrik { background-color: #ffee58; }
+}
+
+// .disable-animate {
+//   -webkit-animation: none !important;
+//   -moz-animation: none !important;
+//   -o-animation: none !important;
+//   -ms-animation: none !important;
+//   animation: none !important;
+//   -o-transform: none !important;
+//   -moz-transform: none !important;
+//   -ms-transform: none !important;
+//   -webkit-transform: none !important;
+//   transform: none !important;
+// }
+.disable-animate {
+  -webkit-animation-duration: 0s !important;
+  -moz-animation-duration: 0s !important;
+  -o-animation-duration: 0s !important;
+  -ms-animation-duration: 0s !important;
+  animation-duration: 0s !important;
+  -o-transition-duration: 0s !important;
+  -moz-transition-duration: 0s !important;
+  -ms-transition-duration: 0s !important;
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+}
+
+.is-128x128 img {
+  max-width: 128px;
+  max-height: 128px;
+  width: auto !important;
+  height: auto !important;
+}
+
+@import "~bulma/bulma";
+@import "~bulma-pageloader";
