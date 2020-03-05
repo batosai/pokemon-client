@@ -4,7 +4,7 @@ module.exports = {
     script: 'npm',
     args: 'start',
 
-    instances: 1,
+    instances: 4,
     autorestart: true,
     watch: false,
     max_memory_restart: '1G',
@@ -18,11 +18,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'root',
+      host : '51.15.201.158',
       ref  : 'origin/master',
       repo : 'git@github.com:batosai/pokemon-client.git',
-      path : '/var/www/production',
+      path : '/app/client',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
