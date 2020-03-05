@@ -23,7 +23,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:batosai/pokemon-client.git',
       path : '/app/client',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && npx pm2 reload ecosystem.config.js --env production'
     }
   }
 };
