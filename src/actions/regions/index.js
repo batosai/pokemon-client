@@ -8,7 +8,7 @@ export const actions = createActions(types)
 export const dispatch = () => async dispatch => {
   const query = `
   query {
-    regions {
+    regions(sort: "_id:asc") {
       id
       name
       image {

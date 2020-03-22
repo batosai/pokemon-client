@@ -43,7 +43,7 @@ export const dispatch = id => async dispatch => {
     //   dispatch(loading.actions.request(false))
     // }
 
-  const response = await fetch(`${config.baseUrl}/pokedexes?region=${id}&_limit=1000`)
+  const response = await fetch(`${config.baseUrl}/pokedexes?region=${id}&_sort=number:ASC&_limit=1000`)
 
   if (response.ok) {
     const json = await response.json()
